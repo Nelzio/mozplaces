@@ -1,0 +1,59 @@
+{% extends 'docs/base.html' %}
+{% block content %}
+<div class="content-code"></div>
+<div class="content">
+    <div class="overflow-hidden content-section" id="content-get-started">
+        <h1 id="get-started">API de províncias e distritos</h1>
+        <pre>
+    API Endpoints
+
+        https://ip_server/provinces
+        https://ip_server/districts
+                </pre>
+        <p>
+            A API de provincias é para developers que queiram listar e atribuir provincias e distritos as suas
+            entidades.
+        </p>
+    </div>
+    <div class="overflow-hidden content-section" id="content-get-characters">
+        <h2 id="get-characters">get provinces</h2>
+        <pre><code class="bash">
+        # endpoint para todas as províncias
+        https://ip_server/provinces
+        
+                </code></pre>
+        <pre><code class="bash">
+        # pode pegar província por ID
+        https://ip_server/provinces?id=1
+                </code></pre>
+        <p>
+            Endpoint para províncias :<br>
+        </p>
+
+    </div>
+    <div class="overflow-hidden content-section" id="content-get-characters">
+        <h2 id="get-characters">get districts</h2>
+        <pre><code class="bash">
+        # endpoint para todas os distritos
+        https://ip_server/districts
+            </code></pre>
+        <pre><code class="bash">
+        # pode pegar um distrito por ID
+        https://ip_server/districts?id=1
+        </code></pre>
+        <pre><code class="bash">
+        # pode pegar distritos pelo ID da província
+        https://ip_server/districts?province_id=1
+            </code></pre>
+        <pre><code class="bash">
+        # pode pegar distritos pelo nome da província
+        https://ip_server/districts/?province=Gaza
+            </code></pre>
+        <p>
+            Endpoint para distritos :<br>
+        </p>
+
+    </div>
+</div>
+<div class="content-code"></div>
+{% endblock %}
