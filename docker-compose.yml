@@ -10,3 +10,11 @@ services:
       - "8000:8000"
     env_file:
       - .env
+  db:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
